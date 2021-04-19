@@ -1,5 +1,7 @@
 package huang.pojo;
 
+import lombok.Getter;
+
 import java.sql.Timestamp;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -8,6 +10,7 @@ import java.util.List;
 
 // Chain类实现
 
+@Getter
 public class Chain {
     // 区块链
     Deque<Block> blockChain;

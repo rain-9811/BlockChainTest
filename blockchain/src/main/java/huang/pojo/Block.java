@@ -5,9 +5,11 @@ import java.util.List;
 
 import com.alibaba.fastjson.JSON;
 import huang.utils.SHA256;
+import lombok.Getter;
 
 // Block类实现
 
+@Getter
 public class Block {
 
     // 交易记录
@@ -18,7 +20,7 @@ public class Block {
     String hash;
     // 初始字符串
     String data;
-    // 初始nonce
+    // 初始nonce 即计算的次数，也即工作量证明
     int nonce = 0;
     // block生成的时间
     Timestamp time;

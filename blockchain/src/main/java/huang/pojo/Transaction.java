@@ -5,9 +5,11 @@ import java.util.Arrays;
 import com.alibaba.fastjson.annotation.JSONField;
 import huang.utils.RSAUtils;
 import huang.utils.SHA256;
+import lombok.Getter;
 
 // Transaction类实现
 
+@Getter
 public class Transaction {
 
     // 交易发送方
@@ -65,6 +67,7 @@ public class Transaction {
     public String toString() {
         return "\t\tfrom:" + this.from +
                 "\t\tto:" + this.to +
-                "\t\tamount:" + this.amount + "\n";
+                "\t\tamount:" + this.amount +
+                "\t\tsignature:" + this.signature +"\n";
     }
 }

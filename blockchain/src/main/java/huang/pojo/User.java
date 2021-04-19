@@ -1,10 +1,12 @@
 package huang.pojo;
 
 import huang.utils.RSAUtils;
+import lombok.Getter;
 
 import java.util.Map;
 
 // User类实现
+@Getter
 public class User {
 
     // 用户名
